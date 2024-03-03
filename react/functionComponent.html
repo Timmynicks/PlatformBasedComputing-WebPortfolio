@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello React!</title>
+    <!-- import React libraries -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>    
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  </head>
+  <body>
+    <div id="root"></div>    
+    <script type="text/babel"> // this type is needed for code to work
+      function Welcome (props) {
+        return <h1>Hello, {props.name}!</h1>;
+      }
+
+      function App() {
+        return (
+          <div>
+            <Welcome name= "Jerry"/>
+            <Welcome name= "Beth"/>
+            <Welcome name= "Summer"/>
+          </div>
+        )
+      }
+
+      const myCustomElement = <Welcome name='Bob' age='25'/>
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App/>);
+    </script>
+  </body>
+</html>

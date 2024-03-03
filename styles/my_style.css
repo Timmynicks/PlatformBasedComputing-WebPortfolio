@@ -1,0 +1,113 @@
+h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    text-align: center;
+    color:green;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color:gold;
+}
+
+body {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#border {
+    border-style: solid;
+}
+
+#banner {
+    border-top: solid;
+    border-bottom: solid;
+    background-color: chocolate;
+}
+
+nav{
+    clear:left; /*doesn't allow anything next to it*/
+    padding:2em;
+    margin-left: 5em;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 5em;
+}
+
+nav ul li a {
+    padding: 0.25em 1em;
+    text-decoration: none; /* no underline */
+    background-color:green; /* pale bluish white */
+    color:gold; /* gold */
+    border: 2px solid black;
+    border-top-left-radius: 1em 1em; /* rounded corner! */
+    border-top-right-radius: 1em 1em; /* another rounded corner! */
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+#links a:hover {
+    background-color: black;
+    color: gold;
+}
+
+table {
+    
+    margin: 5%;
+    margin-bottom: 20%;
+}
+
+caption {
+    font-size: 2em;
+}
+
+td, th {
+    border-style: solid;
+    padding: .5em;
+    padding-right:5em;
+}
+
+/*javascript css */
+li.jsList {
+    margin: 5%;
+}
+button.jsFun {  
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#main a:hover {
+    background-color: black;
+    color: gold;
+}
+  /*jsDom.html css */
+  table#bankTable {  
+    margin: 0 auto;
+  }
+  table#bankTable caption {
+    font-size: 1.5em;
+  }
+  h2#jsDom {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  button.bankAction {
+    margin-left: 35%;
+    margin-top:2%;
+  }

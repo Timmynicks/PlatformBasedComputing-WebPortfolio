@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello React!</title>
+    <!-- import React libraries -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>    
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  </head>
+  <body>
+    <div id="root"></div>    
+    <script type="text/babel"> // this type is needed for code to work
+      var name = "New York"
+      var petObj = {
+        name: 'Boomer',
+        petType: 'dog'
+      };
+      function pet() {
+        return petObj.name + ', my ' + petObj.petType;
+      };
+      const element = <h1>Hello {pet()}!</h1>;
+      const imageElement = <img src='like.png'></img>;
+      const likes = 
+        <div>
+          <h1>Hello {pet()}!</h1>
+          <img src='like.png'></img>
+        </div>;
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(element);
+      root.render(likes);
+    </script>
+  </body>
+</html>
